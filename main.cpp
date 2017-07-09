@@ -174,7 +174,7 @@ int main()
     ucitajLavirint(mat);
     mazeRunner p1;
     ofstream upis("kretanje.txt");
-    for(int i = 0; i < 10000; i++)
+    for(int i = 0; i < 1000; i++)
     {
         p1.edgeDetect(39);
 
