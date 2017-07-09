@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1499613839 source:e:\petnica2k17\hmmmaze\hmmmaze\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<stdlib.h>
+	<time.h>
+	"modul.c"
+
+1499592439 source:e:\petnica2k17\hmmmaze\hmmmaze\modul.c
+
+1499592439 e:\petnica2k17\hmmmaze\hmmmaze\modul.c
+
