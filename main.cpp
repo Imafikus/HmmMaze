@@ -69,7 +69,6 @@ struct mazeRunner
     }
     void randomSmer(vector<int> &v)
     {
-        cout << "Koord: " << x << ' ' << y << endl;
         int random = rand() % 3;
         if(random == 0)//ide gore
         {
@@ -77,7 +76,6 @@ struct mazeRunner
             {
                 x--;
                 v.push_back(0);
-                cout << "Otisao gore" <<  endl;
                 return;
             }
         }
@@ -88,7 +86,6 @@ struct mazeRunner
             {
                 x++;
                 v.push_back(1);
-                cout << "Otisao dole" <<endl;
                 return;
             }
         }
@@ -98,24 +95,19 @@ struct mazeRunner
             {
                 y--;
                 v.push_back(2);
-                cout << "Otisao levo" <<endl;
                 return;            }
         }
-        cout<< "Stajao" <<endl;
         v.push_back(4);
     }
     void skreniDesno(vector<int> &v)
     {
-        cout << "Koord: " << x << ' ' << y << endl;
         if(r == true)
         {
             y++;
             v.push_back(3);
-            cout << "Otisao desno" <<endl;
         }
         else
         {
-            cout << "Stajao" <<endl;
             v.push_back(4);
         }
     }
@@ -163,6 +155,7 @@ void ucitajLavirint(vector<vector<string> > &mat)
         }
 
 }
+
 int main()
 {
     srand(time(NULL));
@@ -179,25 +172,9 @@ int main()
         p1.edgeDetect(39);
 
         p1.mozeDesno(mat);
-        cout << "Prosao ED";
         p1.mozeLevo(mat);
         p1.mozeGore(mat);
         p1.mozeDole(mat);
-
-        cout << i << "CIKLUS" << endl;
-
-        if (p1.r == true) cout << "Moze desno" <<endl;
-        else cout << "Ne moze desno" <<endl;
-
-        if (p1.l == true) cout << "Moze levo" <<endl;
-        else cout << "Ne moze levo" << endl;
-
-        if (p1.u == true) cout << "Moze gore" <<endl;
-        else cout << "Ne moze gore" << endl;
-
-        if (p1.d == true) cout << "Moze dole" <<endl;
-        else cout << "Ne moze dole" << endl;
-
 
         if(p1.r == true)
         {
